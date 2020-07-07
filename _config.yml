@@ -19,7 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Highbyte
-email: highbyte@outlook.com
+email: highbyte[at]outlook.com
 description: >- # this means to ignore newlines until "baseurl:"
   Home page of Highbyte. Software developer mainly in the .NET space, with interests in DevOps, application architecture, home automation, and gaming. 
 
@@ -29,8 +29,11 @@ twitter_username: highbyte
 github_username:  highbyte
 
 # Build settings
-#theme: jekyll-theme-leap-day
+#theme: jekyll-theme-slate
 theme: minima
+#theme: jekyll-theme-minimal
+#theme: jekyll-theme-midnight
+#theme: jekyll-theme-leap-day
 plugins:
   - jekyll-feed
 
