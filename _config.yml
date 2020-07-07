@@ -29,7 +29,8 @@ twitter_username: highbyte
 github_username:  highbyte
 
 # Build settings
-theme: jekyll-theme-leap-day
+#theme: jekyll-theme-leap-day
+theme: minima
 plugins:
   - jekyll-feed
 
