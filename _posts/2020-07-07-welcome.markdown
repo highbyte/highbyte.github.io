@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "Test post"
+date:   2020-07-07 19:30:04 +0200
+categories: Tech
+tags: [github dotnet]
+published: false
+---
+My first post
