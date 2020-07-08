@@ -68,16 +68,13 @@ plugins:
 # Custom Http headers
 #-------------------------------------------------
 # Note: GitHub Pages does not support custom http headers.
-#       Instead 
-#         - Content-Security-Policy: a <head><meta> element is added to html pages in _includes/head/custom.html (that is included by default in the themes default layout)
-#         - Referrer-Policy: a <head><meta> element is added to html pages in _includes/head/custom.html (that is included by default in the themes default layout)
-#         - X-Content-Type-Options: Set in Cloudflare Proxy (that is in front of GitHub Pages) 
+#       As the site is accessed via Cloudflare proxy, Cloudflare Workers can be used to set custom response headers
 # webrick:
 #   headers:
-#     Content-Security-Policy: default-src 'none'; script-src 'self' 'unsafe-inline' https://kit.fontawesome.com/4eee35f757.js https://kit-free.fontawesome.com/releases/latest/js/free.min.js; connect-src 'self'; img-src 'self' https://avatars1.githubusercontent.com/u/871085; style-src 'self' 'unsafe-inline';
-#     Referrer-Policy: no-referrer-when-downgrade"
+#     Content-Security-Policy: default-src 'none'; script-src 'self' 'unsafe-inline' https://kit.fontawesome.com https://kit-free.fontawesome.com/releases/latest/js/free.min.js; connect-src 'self'; img-src 'self' https://avatars1.githubusercontent.com/u/871085; style-src 'self' 'unsafe-inline';
+#     Referrer-Policy: no-referrer-when-downgrade
 #     X-Content-Type-Options: nosniff
-#     Feature-Policy: Feature-Policy: accelerometer 'none'; ambient-light-sensor 'none'; animations 'self'; autoplay 'none'; camera 'none'; cookie 'self'; document-stream-insertion 'none'; domain 'self'; encrypted-media 'self'; fullscreen 'self'; geolocation 'none'; gyroscope 'none'; magnetometer 'none'; microphone 'none'; midi 'none'; payment 'none'; picture-in-picture 'self'; speaker 'none'; sync-script 'self'; sync-xhr 'self'; usb 'none'; vr 'none'
+#     Feature-Policy: accelerometer 'none'; autoplay 'none'; camera 'none'; encrypted-media 'self'; fullscreen 'self'; geolocation 'none'; gyroscope 'none'; magnetometer 'none'; microphone 'none'; midi 'none'; payment 'none'; picture-in-picture 'self'; sync-xhr 'self'; usb 'none';
 #-------------------------------------------------
 # Settings for gem "jekyll-titles-from-headings"
 #-------------------------------------------------
