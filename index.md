@@ -3,6 +3,7 @@
 layout: home
 #layout: default
 published: true
+author_profile: true
 #title: Home
 ---
 
