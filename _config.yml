@@ -65,6 +65,12 @@ plugins:
 #   - vendor/ruby/
 
 #-------------------------------------------------
+# Custom Http headers
+#-------------------------------------------------
+webrick:
+  headers:
+    Content-Security-Policy: default-src 'none'; script-src 'self' 'unsafe-inline' https://kit.fontawesome.com/4eee35f757.js https://kit-free.fontawesome.com/releases/latest/js/free.min.js; connect-src 'self'; img-src 'self' https://avatars1.githubusercontent.com/u/871085; style-src 'self' 'unsafe-inline';
+#-------------------------------------------------
 # Settings for gem "jekyll-titles-from-headings"
 #-------------------------------------------------
 titles_from_headings:
