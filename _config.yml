@@ -67,11 +67,12 @@ plugins:
 #-------------------------------------------------
 # Custom Http headers
 #-------------------------------------------------
-# Note: GitHub Pages does not support custom http headers.
-#       As the site is accessed via Cloudflare proxy, Cloudflare Workers can be used to set custom response headers
+# Note: GitHub Pages does not support custom http headers, so webrick headers below will never be returned to the browser when deployed to GitHub Pages. Though they are useful when testing locally.
+#       As the site is accessed via Cloudflare proxy, Cloudflare Workers can be used to set custom response headers instead when deployed.
 # webrick:
 #   headers:
-#     Content-Security-Policy: default-src 'none'; script-src 'self' 'unsafe-inline' https://kit.fontawesome.com https://kit-free.fontawesome.com/releases/latest/js/free.min.js; connect-src 'self'; img-src 'self' https://avatars1.githubusercontent.com/u/871085; style-src 'self' 'unsafe-inline';
+#     Content-Security-Policy: default-src 'none'; script-src 'unsafe-inline' https://kit.fontawesome.com https://kit-free.fontawesome.com/releases/latest/js/free.min.js; connect-src 'self'; img-src 'self' https://avatars1.githubusercontent.com/u/871085; style-src 'self' 'unsafe-inline'; report-uri https://highbyte.report-uri.com/r/d/csp/enforce
+#     Report-To: {"group":"default","max_age":31536000,"endpoints":[{"url":"https://highbyte.report-uri.com/a/d/g"}],"include_subdomains":true}
 #     Referrer-Policy: no-referrer-when-downgrade
 #     X-Content-Type-Options: nosniff
 #     Feature-Policy: accelerometer 'none'; autoplay 'none'; camera 'none'; encrypted-media 'self'; fullscreen 'self'; geolocation 'none'; gyroscope 'none'; magnetometer 'none'; microphone 'none'; midi 'none'; payment 'none'; picture-in-picture 'self'; sync-xhr 'self'; usb 'none';
