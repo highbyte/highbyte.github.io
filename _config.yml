@@ -23,7 +23,7 @@ title: Highbyte
 locale: "en-US"
 #email: highbyte[at]outlook.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Home page of Highbyte. Software developer mainly in the .NET space, with interests in DevOps, application architecture, home automation, and gaming. 
+  Home page of Highbyte. Software developer mainly in the .NET space, with interests in DevOps, cloud computing, application architecture, home automation, and gaming. 
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://highbyte.se" # the base hostname & protocol for your site, e.g. http://example.com
@@ -91,7 +91,7 @@ minimal_mistakes_skin: default
 author:
   name   : "Highbyte"
   avatar : "https://avatars1.githubusercontent.com/u/871085?s=460&u=3c5dc719d637e8fa879e039eb68f463bdf8f4868&v=4"
-  bio    : "Software developer mainly in the .NET space, with interests in DevOps, application architecture, home automation, and gaming."
+  bio    : "Software developer mainly in the .NET space, with interests in DevOps, cloud computing, application architecture, home automation, and gaming."
   links:
     # - label: "Website"
     #   icon: "fas fa-fw fa-link"
