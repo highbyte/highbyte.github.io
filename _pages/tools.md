@@ -36,3 +36,4 @@ Software and hardware that I use professionally and privately.
 * [Google Home](https://en.wikipedia.org/wiki/Google_Home)
 * [Tellstick Net](https://telldus.com/?s=tellstick)
 * [Raspberry Pi](https://www.raspberrypi.org/)
+* [Pi-hole](https://pi-hole.net/)
