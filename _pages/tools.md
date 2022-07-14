@@ -7,7 +7,7 @@ published: true
 
 Software and hardware that I use professionally and privately.
 
-*Updated 2020*
+*Updated 2022*
 
 # Development & operations
 * [Visual Studio Code](https://code.visualstudio.com/)
@@ -16,10 +16,12 @@ Software and hardware that I use professionally and privately.
 * [ReSharper](https://www.jetbrains.com/resharper/)
 * [Docker](https://www.docker.com/get-docker)
 * [Octopus Deploy](https://octopus.com/)
-* [Sonarqube](https://www.sonarqube.org/)
+* [SonarCloud](https://sonarcloud.io/)
 * [WSL](https://docs.microsoft.com/en-us/windows/wsl/about)
-* [Git](https://git-scm.com/)
 * [GitHub](https://github.com/)
+* [Git](https://git-scm.com/)
+* [Azure App Service](https://azure.microsoft.com/en-us/services/app-service/)
+* [Azure Application Insights](https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview)
 * [Chocolatey](https://chocolatey.org/)
 * [Curl](https://curl.haxx.se/)
 * [Postman](https://www.getpostman.com/)
@@ -34,6 +36,6 @@ Software and hardware that I use professionally and privately.
 * [Synology NAS](https://www.synology.com/en-global/products?chassis=Desktop)
 * [Harmony Hub](https://www.logitech.com/en-us/product/harmony-hub)
 * [Google Home](https://en.wikipedia.org/wiki/Google_Home)
-* [Tellstick Net](https://telldus.com/?s=tellstick)
+* [Apple Home](https://www.apple.com/ios/home/)
 * [Raspberry Pi](https://www.raspberrypi.org/)
 * [Pi-hole](https://pi-hole.net/)
