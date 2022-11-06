@@ -30,8 +30,17 @@ url: "https://highbyte.se" # the base hostname & protocol for your site, e.g. ht
 twitter_username: highbyte
 github_username:  highbyte
 
+# Mastodon instances
+mastodon:
+  - username: highbyte
+    instance: mastodon.nu
+  - username: highbyte
+    instance: mstdn.social
+  - username: highbyte
+    instance: mastodon.online
+
 # Build settings
-remote_theme: "mmistakes/minimal-mistakes@4.19.3"
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 #theme: jekyll-theme-slate
 #theme: minima
 #theme: jekyll-theme-minimal
@@ -96,12 +105,15 @@ author:
     # - label: "Website"
     #   icon: "fas fa-fw fa-link"
     #   url: "https://highbyte.se"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/highbyte/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/highbyte/"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/highbyte/"
+    - label: "Mastodon"
+      icon: "fab fa-fw fa-mastodon"
+      url: "https://mastodon.nu/@highbyte"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/christercederborg/"
@@ -111,12 +123,15 @@ footer:
     # - label: "Website"
     #   icon: "fas fa-fw fa-link"
     #   url: "https://highbyte.se"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/highbyte/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/highbyte/"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/highbyte/"
+    - label: "Mastodon"
+      icon: "fab fa-fw fa-mastodon"
+      url: "https://mastodon.nu/@highbyte"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/christercederborg/"
