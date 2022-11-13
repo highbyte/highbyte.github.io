@@ -33,11 +33,11 @@ github_username:  highbyte
 # Mastodon instances
 mastodon:
   - username: highbyte
+    instance: mastodon.online
+  - username: highbyte
     instance: mastodon.nu
   - username: highbyte
     instance: mstdn.social
-  - username: highbyte
-    instance: mastodon.online
 
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
@@ -113,11 +113,10 @@ author:
       url: "https://twitter.com/highbyte/"
     - label: "Mastodon"
       icon: "fab fa-fw fa-mastodon"
-      url: "https://mastodon.nu/@highbyte"
+      url: "https://mastodon.online/@highbyte"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/christercederborg/"
-
 footer:
   links:
     # - label: "Website"
@@ -131,7 +130,7 @@ footer:
       url: "https://twitter.com/highbyte/"
     - label: "Mastodon"
       icon: "fab fa-fw fa-mastodon"
-      url: "https://mastodon.nu/@highbyte"
+      url: "https://mastodon.online/@highbyte"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/christercederborg/"
