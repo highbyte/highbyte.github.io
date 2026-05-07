@@ -23,7 +23,7 @@ title: Highbyte
 locale: "en-US"
 #email: highbyte[at]outlook.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Home page of Highbyte. Software developer mainly in the .NET space, with interests in DevOps, cloud computing, retro computing, home automation, and gaming. 
+  Home page of Highbyte. Developer and DevOps practitioner in the .NET space. Spare cycles go to retro computing, home automation, and gaming. 
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://highbyte.se" # the base hostname & protocol for your site, e.g. http://example.com
@@ -80,7 +80,7 @@ plugins:
 #       As the site is accessed via Cloudflare proxy, Cloudflare Workers can be used to set custom response headers instead when deployed.
 # webrick:
 #   headers:
-#     Content-Security-Policy: default-src 'none'; script-src 'unsafe-inline' https://kit.fontawesome.com https://kit-free.fontawesome.com/releases/latest/js/free.min.js; connect-src 'self'; img-src 'self' https://avatars1.githubusercontent.com/u/871085; style-src 'self' 'unsafe-inline'; report-uri https://highbyte.report-uri.com/r/d/csp/enforce
+#     Content-Security-Policy: default-src 'none'; script-src 'self' 'unsafe-inline' https://kit.fontawesome.com https://kit-free.fontawesome.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net; img-src 'self' data: https://avatars1.githubusercontent.com; connect-src 'self' https://highbyte.report-uri.com https://cloudflareinsights.com; report-uri https://highbyte.report-uri.com/r/d/csp/enforce
 #     Report-To: {"group":"default","max_age":31536000,"endpoints":[{"url":"https://highbyte.report-uri.com/a/d/g"}],"include_subdomains":true}
 #     Referrer-Policy: no-referrer-when-downgrade
 #     X-Content-Type-Options: nosniff
@@ -100,7 +100,7 @@ minimal_mistakes_skin: dark
 author:
   name   : "Highbyte"
   avatar : "https://avatars1.githubusercontent.com/u/871085?s=460&u=3c5dc719d637e8fa879e039eb68f463bdf8f4868&v=4"
-  bio    : "Software developer mainly in the .NET space, with interests in DevOps, cloud and retro computing, home automation, and gaming."
+  bio    : "Developer and DevOps practitioner in the .NET space. Spare cycles go to retro computing, home automation, and gaming."
   links:
     # - label: "Website"
     #   icon: "fas fa-fw fa-link"
