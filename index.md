@@ -19,9 +19,9 @@ Been coding and doing other development/IT-related stuff professionally since 19
 ## Even earlier
 I wrote my first simple programs back in the 80’s on a [ZX81][zx81] in Basic, and later on more complex ones on C128 and Amiga in Assembler where I was involved in the [Demoscene][demoscene]. Started using the alias [Highbyte][highbyte_demoscene] around then.
 
+[github_user]: https://github.com/highbyte
 [demoscene]: https://en.wikipedia.org/wiki/Demoscene
 [zx81]: https://en.wikipedia.org/wiki/ZX81
 [highbyte_demoscene]: http://janeway.exotica.org.uk/author.php?id=18992
-[github_user]: https://github.com/highbyte
 [ecrucial]: https://ecrucial.se
 [home_automation]: https://www.home-assistant.io
