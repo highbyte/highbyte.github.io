@@ -64,7 +64,7 @@ a:visited {
   font-size: 2em !important;
   letter-spacing: 0.12em;
   padding-left: 1em;
-  color: #5ab0ff !important;
+  color: #1262b0 !important;
   text-shadow:
     0 0 10px rgba(90, 176, 255, 0.7),
     0 0 28px rgba(64, 64, 232, 0.4) !important;
@@ -321,6 +321,24 @@ body::before {
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
+  // Typewriter effect for site title — home page only
+  var isHome = window.location.pathname === '/' ||
+               window.location.pathname === '/index.html';
+  if (isHome) {
+    var titleEl = document.querySelector('a.site-title');
+    if (titleEl) {
+      var fullText = titleEl.textContent.trim();
+      titleEl.textContent = '';
+      setTimeout(function () {
+        var i = 0;
+        var timer = setInterval(function () {
+          titleEl.textContent = fullText.slice(0, ++i);
+          if (i >= fullText.length) clearInterval(timer);
+        }, 120);
+      }, 1000);
+    }
+  }
+
   // BASIC blocks may render with or without Rouge's highlight wrapper
   var candidates = Array.from(document.querySelectorAll(
     '.language-basic pre, pre code.language-basic'
