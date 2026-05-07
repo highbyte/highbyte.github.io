@@ -40,6 +40,8 @@ mastodon:
     instance: mstdn.social
 
 # Build settings
+sass:
+  quiet_deps: true # suppresses Sass deprecation warnings from the remote theme (mmistakes/minimal-mistakes), which uses deprecated @import syntax that we can't fix
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 #theme: jekyll-theme-slate
 #theme: minima
