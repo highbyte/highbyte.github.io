@@ -1,23 +1,50 @@
 ---
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
-#layout: default
 published: true
 author_profile: true
-#title: Home
 ---
 
-# Welcome
-Hi! My name is Christer, and this is my personal home page.
+`READY.`
 
-## Now
-Currently working as a consultant at [Ecrucial][ecrucial] in Stockholm, Sweden, doing mostly DevOps, development, and application architecture work in the .NET space. I've started some [open source projects][github_user] on GitHub. Other IT related interests include [home automation][home_automation] and gaming. 
+Software developer by day, retro computing tinkerer by night. Based in Stockholm.
 
-## Earlier
-Been coding and doing other development/IT-related stuff professionally since 1995, using a bunch of different technologies.
+#### Now
 
-## Even earlier
-I wrote my first simple programs back in the 80’s on a [ZX81][zx81] in Basic, and later on more complex ones on C128 and Amiga in Assembler where I was involved in the [Demoscene][demoscene]. Started using the alias [Highbyte][highbyte_demoscene] around then.
+Consultant at [Ecrucial][ecrucial] in Stockholm — Development and DevOps in the .NET space.
+
+```yaml
+role:     Consultant @ Ecrucial, Stockholm
+focus:    [.NET, DevOps]
+projects: github.com/highbyte
+also:     [home-automation, gaming]
+```
+
+#### Earlier
+
+Coding professionally since 1995, across a lot of different technologies and domains.
+
+```
+$ git log --format="%ad  %s" --date=format:'%Y'
+2010s  .NET Core, Cloud, CI/CD pipelines
+2000s  .NET Framework, on-prem enterprise systems
+1990s  VB6, tools and product development
+1990   First professional code — C, VBA
+```
+
+#### Even Earlier
+
+First programs in the 80s on a [ZX81][zx81] in BASIC, then deeper into C128 and Amiga in Assembler. Got involved in the [Demoscene][demoscene] and picked up the alias [Highbyte][highbyte_demoscene] around then. That nostalgia eventually turned into a project — a [6502 CPU / C64 emulator][emulator] you can run in your browser:
+
+```basic
+10 REM *** HIGHBYTE / C64 BASIC 2.0 ***
+20 POKE 53280,6 : POKE 53281,6
+30 PRINT CHR$(147)
+40 PRINT "HELLO FROM 1987!"
+50 GOTO 40
+```
+
+[Try the emulator →][emulator]
 
 [github_user]: https://github.com/highbyte
 [demoscene]: https://en.wikipedia.org/wiki/Demoscene
@@ -25,3 +52,4 @@ I wrote my first simple programs back in the 80’s on a [ZX81][zx81] in Basic, 
 [highbyte_demoscene]: http://janeway.exotica.org.uk/author.php?id=18992
 [ecrucial]: https://ecrucial.se
 [home_automation]: https://www.home-assistant.io
+[emulator]: https://highbyte.se/dotnet-6502/app2/

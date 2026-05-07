@@ -191,6 +191,23 @@ figure.highlight code {
   border: none;
 }
 
+pre:not(.highlight) {
+  position: relative;
+  background: #030c10;
+  border-left: 3px solid #4040e8;
+  border-top: 1px solid #183060;
+  border-right: 1px solid #183060;
+  border-bottom: 1px solid #183060;
+  padding: 1em;
+  overflow-x: auto;
+}
+pre:not(.highlight) code {
+  color: #a0e0b0;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
 /* ── Blockquote ───────────────────────────────── */
 blockquote {
   border-left: 3px solid #4040e8;
@@ -264,6 +281,27 @@ tr:nth-child(even) td {
   vertical-align: -0.125em;
 }
 
+/* ── BASIC copy button ────────────────────────── */
+.c64-copy-btn {
+  position: absolute;
+  top: 0.4em;
+  right: 0.4em;
+  background: #081428;
+  border: 1px solid #183060;
+  color: #5ab0ff;
+  cursor: pointer;
+  padding: 0.2em 0.4em;
+  font-size: 0.8em;
+  border-radius: 2px;
+  opacity: 0.55;
+  transition: opacity 0.15s, color 0.15s;
+  line-height: 1;
+}
+.c64-copy-btn:hover {
+  opacity: 1;
+  color: #a0d8ff;
+}
+
 /* ── CRT scanline overlay ─────────────────────── */
 body::before {
   content: '';
@@ -280,3 +318,50 @@ body::before {
   z-index: 9990;
 }
 </style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  // BASIC blocks may render with or without Rouge's highlight wrapper
+  var candidates = Array.from(document.querySelectorAll(
+    '.language-basic pre, pre code.language-basic'
+  ));
+
+  var seen = new Set();
+  candidates.forEach(function (el) {
+    var pre = el.tagName === 'PRE' ? el : el.closest('pre');
+    if (!pre || seen.has(pre)) return;
+    seen.add(pre);
+
+    pre.style.position = 'relative';
+
+    var btn = document.createElement('button');
+    btn.className = 'c64-copy-btn';
+    btn.title = 'Copy as lowercase';
+    btn.innerHTML = '<i class="fas fa-fw fa-copy"></i>';
+
+    btn.addEventListener('click', function () {
+      var code = pre.querySelector('code') || pre;
+      var text = code.textContent.toLowerCase();
+      navigator.clipboard.writeText(text).then(function () {
+        btn.innerHTML = '<i class="fas fa-fw fa-check"></i>';
+        setTimeout(function () {
+          btn.innerHTML = '<i class="fas fa-fw fa-copy"></i>';
+        }, 2000);
+      }).catch(function () {
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+        btn.innerHTML = '<i class="fas fa-fw fa-check"></i>';
+        setTimeout(function () {
+          btn.innerHTML = '<i class="fas fa-fw fa-copy"></i>';
+        }, 2000);
+      });
+    });
+
+    pre.appendChild(btn);
+  });
+});
+</script>
