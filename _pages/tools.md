@@ -9,13 +9,13 @@ Software and hardware that I use professionally and privately.
 
 *Updated 2026*
 
-# Development & operations
+### Development
 
-## Editors & IDEs
+#### Editors & IDEs
 * [Visual Studio Code](https://code.visualstudio.com/)
 * [Visual Studio](https://visualstudio.microsoft.com/)
 
-## AI tools
+#### AI tools
 * [Claude Code](https://claude.ai/code) — Anthropic's CLI for Claude
 * [Claude Desktop](https://claude.ai/download) — Desktop app for Claude
 * [GitHub Copilot](https://github.com/features/copilot) — AI code completion in editors
@@ -23,7 +23,30 @@ Software and hardware that I use professionally and privately.
 * [LM Studio](https://lmstudio.ai/) — Run LLMs locally
 * [Warp](https://www.warp.dev/) — AI-powered terminal
 
-## Terminal & shell
+#### Automation and testing
+* [Playwright](https://playwright.dev/) — Browser automation & testing
+* [Peekaboo](https://github.com/openclaw/Peekaboo) - Desktop automation *(macOS)*
+* [Postman](https://www.postman.com/)
+
+#### Version control
+* [Git](https://git-scm.com/)
+* [GitHub](https://github.com/)
+* [GitHub CLI](https://cli.github.com/)
+
+#### Languages & runtimes
+* [.NET](https://dotnet.microsoft.com/)
+* [Node.js](https://nodejs.org/) — via [NVM](https://github.com/nvm-sh/nvm)
+
+#### DevOps & cloud
+* [Docker](https://www.docker.com/)
+* [Azure App Service](https://azure.microsoft.com/en-us/services/app-service/)
+* [Azure Application Insights](https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview)
+* [Octopus Deploy](https://octopus.com/)
+* [SonarCloud](https://sonarcloud.io/)
+* [NGINX](https://www.nginx.com/)
+
+### CLI 
+#### Terminal & shell
 * [Ghostty](https://ghostty.org/) — GPU-accelerated terminal emulator *(macOS, Linux)*
 * [Zellij](https://zellij.dev/) — Terminal multiplexer *(macOS, Linux)*
 * [Starship](https://starship.rs/) — Cross-platform shell prompt
@@ -32,47 +55,25 @@ Software and hardware that I use professionally and privately.
 * [PowerShell 7](https://github.com/PowerShell/PowerShell) *(Windows)*
 * [WSL](https://docs.microsoft.com/en-us/windows/wsl/about) — Linux on Windows *(Windows)*
 
-## Automation
-* [Playwright](https://playwright.dev/) — Browser automation & testing
-* [Peekaboo](https://github.com/openclaw/Peekaboo) - Desktop automation *(macOS)*
-
-## CLI utilities
+#### CLI utilities
 * [Tuckr](https://github.com/RaphGL/Tuckr) — Dotfiles manager
 * [bat](https://github.com/sharkdp/bat) — A better `cat` with syntax highlighting
 * [fzf](https://github.com/junegunn/fzf) — Fuzzy finder for the terminal
 * [jq](https://jqlang.github.io/jq/) — JSON processor
 
-## Version control
-* [Git](https://git-scm.com/)
-* [GitHub](https://github.com/)
-* [GitHub CLI](https://cli.github.com/)
-
-## Languages & runtimes
-* [.NET](https://dotnet.microsoft.com/)
-* [Node.js](https://nodejs.org/) — via [NVM](https://github.com/nvm-sh/nvm)
-
-## DevOps & cloud
-* [Docker](https://www.docker.com/)
-* [Azure App Service](https://azure.microsoft.com/en-us/services/app-service/)
-* [Azure Application Insights](https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview)
-* [Octopus Deploy](https://octopus.com/)
-* [SonarCloud](https://sonarcloud.io/)
-* [NGINX](https://www.nginx.com/)
-
-## Networking & security
+### Networking & security
 * [Tailscale](https://tailscale.com/) — Mesh VPN
-
-# Home automation & network
-* [Home Assistant](https://www.home-assistant.io/)
+* [Pi-hole](https://pi-hole.net/)
 * [Ubiquiti UniFi](https://unifi-sdn.ubnt.com/)
+
+### Home automation
+* [Home Assistant](https://www.home-assistant.io/)
 * [Synology NAS](https://www.synology.com/en-global/products?chassis=Desktop)
 * [Harmony Hub](https://www.logitech.com/en-us/product/harmony-hub)
 * [Google Home](https://en.wikipedia.org/wiki/Google_Home)
 * [Apple Home](https://www.apple.com/ios/home/)
 * [Raspberry Pi](https://www.raspberrypi.org/)
-* [Pi-hole](https://pi-hole.net/)
 
-## Other
+### Other
 * [Karabiner-Elements](https://karabiner-elements.pqrs.org/) — Keyboard customizer *(macOS)*
 * [SysInternals](https://docs.microsoft.com/en-us/sysinternals/) *(Windows)*
-* [Postman](https://www.postman.com/)
